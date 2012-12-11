@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">おねがいリスト</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- 共通 -->
+    <string name="ToTopPage">トップページへ</string>
+    
+    <!-- トップページ用画面 -->
+    <string name="order_label">おねがいする</string>
+    <string name="editList_label">品物リスト編集</string>
+    <string name="orderHistory_label">おねがい履歴を見る</string>
+    
+    <!-- カテゴリ選択画面 -->
+    <string name="EggAndDairyAndDrink">卵・乳製品・飲料</string>
+    <string name="ProcessItems">加工品</string>
+    <string name="FishItems">魚介</string>
+    <string name="MeetItems">肉類</string>
+    <string name="VegetableItems">野菜</string>
+    <string name="FruitItems">果物</string>
+    <string name="ElseItems">その他</string>
+    <string name="ToOrderConfirm">おねがい確認へ</string>
+    
+    <!-- 品物リスト編集画面 -->
+    <string name="list_title">品物リスト編集</string>
+    <string name="list_warning">※「変更する」・「削除する」場合は【品物リスト】から品物を一つ選択してください。</string>
+    <string name="Itemlist">【品物リスト】</string>
+    <string name="ItemAdd">追加する</string>
+    <string name="ItemUpdate">変更する</string>
+    <string name="ItemDelete">削除する</string>
+    
+    <!-- お願い確認画面 -->
+    <string name="checkTxt">この内容でおねがいしますか？</string>
+    <string name="no">いいえ</string>
+    <string name="yes">はい</string>
+    
+    <!-- お願い履歴画面 -->
+    <string name="historyTitle">おねがい履歴</string>
+    <string name="stepTxt">※ご覧になりたい日時をタッチしてください。\n最新５件までの履歴が参照できます。</string>
+    <string name="back">戻る</string>
+</resources>

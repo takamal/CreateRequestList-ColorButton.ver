@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <!-- カテゴリ選択ボタン群 ここから -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+		<ImageView
+            android:id="@+id/EggAndDairyAndDrink"
+            android:tag="@string/EggAndDairyAndDrink"
+	        android:layout_width="0dp"
+            android:layout_height="wrap_content"
+         	android:layout_weight="2"
+            android:src="@drawable/push_egg"
+          	android:onClick="orderItemInfo" />
+		<ImageView
+            android:id="@+id/ProcessItems"
+            android:tag="@string/ProcessItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/process"
+           	android:onClick="orderItemInfo" />
+        <ImageView
+            android:id="@+id/FishItems"
+            android:tag="@string/FishItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fish"
+	        android:onClick="orderItemInfo" />           
+        <!-- 過去カテゴリボタン群　上段
+     	<Button 
+	    	android:id="@+id/EggAndDairyAndDrink"
+	        android:text="@string/EggAndDairyAndDrink"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="wrap_content"
+	        android:onClick="orderItemInfo" />
+	    <Button 
+	        android:id="@+id/ProcessItems"
+	        android:text="@string/ProcessItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:onClick="orderItemInfo" />
+	    <Button 
+	        android:id="@+id/FishItems"
+	        android:text="@string/FishItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:onClick="orderItemInfo" />   
+	     過去カテゴリボタン群 上段ここまで-->
+	     
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/MeetItems"
+            android:tag="@string/MeetItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/meet"
+			android:onClick="orderItemInfo" />
+
+        <ImageView
+            android:id="@+id/VegetableItems"
+            android:tag="@string/VegetableItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vegetable"
+			android:onClick="orderItemInfo" />
+
+        <ImageView
+            android:id="@+id/FruitItems"
+            android:tag="@string/FruitItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fruit"
+			android:onClick="orderItemInfo" />
+
+        <ImageView
+            android:id="@+id/ElseItems"
+            android:tag="@string/ElseItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/etc"
+			android:onClick="orderItemInfo" />
+        
+        <!--過去カテゴリボタン群　下段
+	  	<Button 
+	     	android:id="@+id/MeetItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/MeetItems"
+	        android:onClick="orderItemInfo" />
+	    <Button 
+	        android:id="@+id/VegetableItems"
+	      	android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/VegetableItems"
+	        android:onClick="orderItemInfo" />
+	    <Button 
+	    	android:id="@+id/FruitItems"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/FruitItems"
+	        android:onClick="orderItemInfo" />
+	    <Button 
+			android:id="@+id/ElseItems"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/ElseItems"
+			android:onClick="orderItemInfo" />
+    
+    過去カテゴリボタン群 下段ここまで-->
+    </LinearLayout>
+    <!-- カテゴリ選択ボタン群 ここまで -->
+    
+    <!-- 品物名表示一覧 ここから-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+	    <HorizontalScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	    	<ScrollView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="match_parent">
+	        	<TableLayout
+	        	    android:id="@+id/itemInfo"
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content">        	    
+	        	</TableLayout>
+	   		</ScrollView>
+	    </HorizontalScrollView>
+	    <!-- 品物名表示一覧 ここまで-->
+	    
+	    <!-- 画面遷移ボタン ここから-->
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom"
+		    android:orientation="horizontal">
+		    <Button 
+		        android:id="@+id/ToTopPage"
+		        android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"	    
+		    	android:text="@string/ToTopPage"
+		    	android:onClick="returnTopPage" />
+		    <Button 
+		        android:id="@+id/ToOrderConfirm"
+		        android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"	    
+		    	android:text="@string/ToOrderConfirm"
+		    	android:onClick="toConfirmPage" />
+		</LinearLayout>
+	<!-- 画面遷移ボタン ここまで-->
+	</LinearLayout>
+</LinearLayout>

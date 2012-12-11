@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- ヘッダー -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/historyTitle"
+            android:textSize="25dp"
+            android:layout_weight="2" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_weight="1"
+            android:onClick="returnPage" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/date"
+     	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"/>
+    
+    <!-- おねがい内容 -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    	<ScrollView
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent">
+        	<LinearLayout
+        	    android:id="@+id/historyItem"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="vertical">
+        	</LinearLayout>        	
+   		</ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>
